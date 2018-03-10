@@ -8,6 +8,7 @@ import Porfolio from './portfolio'
 import Client from './client'
 import Team from './team'
 import Contact from './contact'
+import Footer from './footer'
 import * as Scroll from 'react-scroll';
 import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
@@ -86,15 +87,7 @@ class App extends React.Component {
         <div className="container">
           <Contact />
         </div>
-        <footer className="footer">
-          <div className="container">
-            <div className="footer-logo"><a href="#"><img src="/assets/footer-logo.png" alt="" /></a></div>
-            <span className="copyright">&copy; Knight Theme. All Rights Reserved</span>
-            <div className="credits">
-              <a href="https://bootstrapmade.com/bootstrap-agency-templates/">Bootstrap Agency Templates</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     );
   }
