@@ -1,4 +1,10 @@
 import React from 'react'
+import portfolio1 from '../src/images/Portfolio-pic1.jpg'
+import portfolio2 from '../src/images/Portfolio-pic2.jpg'
+import portfolio3 from '../src/images/Portfolio-pic3.jpg'
+import portfolio4 from '../src/images/Portfolio-pic4.jpg'
+import portfolio5 from '../src/images/Portfolio-pic5.jpg'
+import portfolio6 from '../src/images/Portfolio-pic6.jpg'
 
 class Portfolio extends React.Component {
   constructor(props) {
@@ -23,32 +29,32 @@ class Portfolio extends React.Component {
         </div>
         <div className="portfolioContainer wow fadeInUp delay-04s">
           <div className=" Portfolio-box printdesign">
-            <a href="#"><img src="/assets/Portfolio-pic1.jpg" alt="" /></a>
+            <a href="#"><img src={portfolio1} alt="" /></a>
             <h3>Foto Album</h3>
             <p>Print Design</p>
           </div>
           <div className="Portfolio-box webdesign">
-            <a href="#"><img src="/assets/Portfolio-pic2.jpg" alt="" /></a>
+            <a href="#"><img src={portfolio2} alt="" /></a>
             <h3>Luca Theme</h3>
             <p>Web Design</p>
           </div>
           <div className=" Portfolio-box branding">
-            <a href="#"><img src="/assets/Portfolio-pic3.jpg" alt="" /></a>
+            <a href="#"><img src={portfolio3} alt="" /></a>
             <h3>Uni Sans</h3>
             <p>Branding</p>
           </div>
           <div className=" Portfolio-box photography">
-            <a href="#"><img src="/assets/Portfolio-pic4.jpg" alt="" /></a>
+            <a href="#"><img src={portfolio4} alt="" /></a>
             <h3>Vinyl Record</h3>
             <p>Photography</p>
           </div>
           <div className=" Portfolio-box branding">
-            <a href="#"><img src="/assets/Portfolio-pic5.jpg" alt="" /></a>
+            <a href="#"><img src={portfolio5} alt="" /></a>
             <h3>Hipster</h3>
             <p>Branding</p>
           </div>
           <div className=" Portfolio-box photography">
-            <a href="#"><img src="/assets/Portfolio-pic6.jpg" alt="" /></a>
+            <a href="#"><img src={portfolio6} alt="" /></a>
             <h3>Windmills</h3>
             <p>Photography</p>
           </div>

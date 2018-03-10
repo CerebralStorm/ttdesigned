@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../src/images/logo.png'
 
 class Header extends React.Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class Header extends React.Component {
       <header className="header" id="header">
         <div className="container">
           <figure className="logo animated fadeInDown delay-07s">
-            <a href="#"><img src="/assets/logo.png" alt="" /></a>
+            <a href="#"><img src={logo} alt="" /></a>
           </figure>
           <h1 className="animated fadeInDown delay-07s">Welcome To TTDesign</h1>
           <ul className="we-create animated fadeInUp delay-1s">

@@ -1,4 +1,5 @@
 import React from 'react'
+import macbook from '../src/images/macbook-pro.png'
 
 class Service extends React.Component {
   constructor(props) {
@@ -51,9 +52,8 @@ class Service extends React.Component {
               </div>
             </div>
             <figure className="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
-              <img src="/assets/macbook-pro.png" alt="" />
+              <img src={macbook} alt="" />
             </figure>
-
           </div>
         </div>
       </section>

@@ -6,11 +6,13 @@ import Service from './service'
 import FeaturedWork from './featured_work'
 import Porfolio from './portfolio'
 import Client from './client'
+import ClientLogo from './client_logo'
 import Team from './team'
 import Contact from './contact'
 import Footer from './footer'
 import * as Scroll from 'react-scroll';
 import { Link, DirectLink, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import logo from '../src/images/small-logo.png'
 
 class App extends React.Component {
   constructor(props) {
@@ -39,7 +41,7 @@ class App extends React.Component {
                   Portfolio
                 </Link>
               </li>
-              <li className="small-logo"><a><img src="/assets/small-logo.png" alt="" /></a></li>
+              <li className="small-logo"><a><img src={logo} alt="" /></a></li>
               <li>
                 <Link activeClass="active" to="client" spy={true} smooth={true} offset={50} duration={500}>
                   Clients
@@ -63,22 +65,9 @@ class App extends React.Component {
         <FeaturedWork />
         <Porfolio />
         <Client />
-
-        <div className="c-logo-part">
-          <div className="container">
-            <ul>
-              <li><a href="#"><img src="/assets/c-liogo1.png" alt="" /></a></li>
-              <li><a href="#"><img src="/assets/c-liogo2.png" alt="" /></a></li>
-              <li><a href="#"><img src="/assets/c-liogo3.png" alt="" /></a></li>
-              <li><a href="#"><img src="/assets/c-liogo4.png" alt="" /></a></li>
-              <li><a href="#"><img src="/assets/c-liogo5.png" alt="" /></a></li>
-            </ul>
-          </div>
-        </div>
-
+        <ClientLogo />
         <Team />
         <section className="business-talking">
-
           <div className="container">
             <h2>Let’s Talk Business.</h2>
           </div>

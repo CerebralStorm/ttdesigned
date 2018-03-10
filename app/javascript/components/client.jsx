@@ -1,4 +1,5 @@
 import React from 'react'
+import client1 from '../src/images/client-pic1.jpg'
 
 class Client extends React.Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class Client extends React.Component {
           <ul className="client wow fadeIn delay-05s">
             <li>
               <a href="#">
-                <img src="/assets/client-pic1.jpg" alt="" />
+                <img src={client1} alt="" />
                 <h3>James Bond</h3>
                 <span>License To Drink Inc.</span>
               </a>
