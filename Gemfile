@@ -19,6 +19,7 @@ gem 'font-awesome-rails'
 group :development, :test do
   gem 'pry'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'dotenv'
 end
 
 group :development do
