@@ -13,7 +13,7 @@ class Portfolio extends React.Component {
 
   render() {
     return (
-      <section name='portfolio' className="main-section paddind" id="Portfolio">
+      <section name='portfolio' className="main-section padding" id="portfolio">
         <div className="container">
           <h2>Portfolio</h2>
           <h6>Fresh portfolio of designs that will keep you wanting more.</h6>
@@ -59,6 +59,7 @@ class Portfolio extends React.Component {
             <p>Photography</p>
           </div>
         </div>
+        <div className='clearfix'></div>
       </section>
     );
   }

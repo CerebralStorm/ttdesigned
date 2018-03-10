@@ -17,43 +17,65 @@ import logo from '../src/images/small-logo.png'
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll(event) {
+    let navbar = document.getElementById("navbar")
+    let header = document.getElementById("header")
+    let service = document.getElementById("service")
+    if (window.pageYOffset >= header.offsetHeight) {
+      navbar.classList.add("sticky");
+      service.classList.add("scroll-padding");
+    } else {
+      navbar.classList.remove("sticky");
+      service.classList.remove("scroll-padding");
+    }
   }
 
   render() {
     return (
       <div>
         <Header />
-        <nav className="main-nav-outer" id="test">
+        <nav className="main-nav-outer" id="navbar">
           <div className="container">
             <ul className="main-nav">
               <li>
-                <Link activeClass="active" to="header" spy={true} smooth={true} offset={50} duration={500}>
+                <Link activeClass="active" to="header" spy={true} smooth={true} offset={-90} duration={500}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link activeClass="active" to="service" spy={true} smooth={true} offset={50} duration={500}>
+                <Link activeClass="active" to="service" spy={true} smooth={true} offset={-90} duration={500}>
                   Services
                 </Link>
               </li>
               <li>
-                <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={50} duration={500}>
+                <Link activeClass="active" to="portfolio" spy={true} smooth={true} offset={-90} duration={500}>
                   Portfolio
                 </Link>
               </li>
               <li className="small-logo"><a><img src={logo} alt="" /></a></li>
               <li>
-                <Link activeClass="active" to="client" spy={true} smooth={true} offset={50} duration={500}>
+                <Link activeClass="active" to="client" spy={true} smooth={true} offset={-90} duration={500}>
                   Clients
                 </Link>
               </li>
               <li>
-                <Link activeClass="active" to="team" spy={true} smooth={true} offset={50} duration={500}>
+                <Link activeClass="active" to="team" spy={true} smooth={true} offset={-90} duration={500}>
                   Team
                 </Link>
               </li>
               <li>
-                <Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500}>
+                <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-90} duration={500}>
                   Contact
                 </Link>
               </li>
