@@ -18,7 +18,7 @@ class Client extends React.Component {
           <ul className="client wow fadeIn delay-05s">
             <li>
               <a href="#">
-                <img src="assets/client-pic1.jpg" alt="" />
+                <img src="/assets/client-pic1.jpg" alt="" />
                 <h3>James Bond</h3>
                 <span>License To Drink Inc.</span>
               </a>

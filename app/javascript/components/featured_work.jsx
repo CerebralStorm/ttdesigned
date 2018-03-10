@@ -11,7 +11,7 @@ class FeaturedWork extends React.Component {
         <div className="container">
           <div className="row">
             <figure className="col-lg-5 col-sm-4 wow fadeInLeft">
-              <img src="assets/iphone.png" alt="" />
+              <img src="/assets/iphone.png" alt="" />
             </figure>
             <div className="col-lg-7 col-sm-8 featured-work">
               <h2>featured work</h2>

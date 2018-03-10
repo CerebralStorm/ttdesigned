@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import Header from './header'
-import Nav from './nav'
 import Service from './service'
 import FeaturedWork from './featured_work'
 import Porfolio from './portfolio'
@@ -39,7 +38,7 @@ class App extends React.Component {
                   Portfolio
                 </Link>
               </li>
-              <li className="small-logo"><a><img src="assets/small-logo.png" alt="" /></a></li>
+              <li className="small-logo"><a><img src="/assets/small-logo.png" alt="" /></a></li>
               <li>
                 <Link activeClass="active" to="client" spy={true} smooth={true} offset={50} duration={500}>
                   Clients
@@ -67,11 +66,11 @@ class App extends React.Component {
         <div className="c-logo-part">
           <div className="container">
             <ul>
-              <li><a href="#"><img src="assets/c-liogo1.png" alt="" /></a></li>
-              <li><a href="#"><img src="assets/c-liogo2.png" alt="" /></a></li>
-              <li><a href="#"><img src="assets/c-liogo3.png" alt="" /></a></li>
-              <li><a href="#"><img src="assets/c-liogo4.png" alt="" /></a></li>
-              <li><a href="#"><img src="assets/c-liogo5.png" alt="" /></a></li>
+              <li><a href="#"><img src="/assets/c-liogo1.png" alt="" /></a></li>
+              <li><a href="#"><img src="/assets/c-liogo2.png" alt="" /></a></li>
+              <li><a href="#"><img src="/assets/c-liogo3.png" alt="" /></a></li>
+              <li><a href="#"><img src="/assets/c-liogo4.png" alt="" /></a></li>
+              <li><a href="#"><img src="/assets/c-liogo5.png" alt="" /></a></li>
             </ul>
           </div>
         </div>
@@ -89,7 +88,7 @@ class App extends React.Component {
         </div>
         <footer className="footer">
           <div className="container">
-            <div className="footer-logo"><a href="#"><img src="assets/footer-logo.png" alt="" /></a></div>
+            <div className="footer-logo"><a href="#"><img src="/assets/footer-logo.png" alt="" /></a></div>
             <span className="copyright">&copy; Knight Theme. All Rights Reserved</span>
             <div className="credits">
               <a href="https://bootstrapmade.com/bootstrap-agency-templates/">Bootstrap Agency Templates</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>

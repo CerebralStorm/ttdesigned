@@ -51,7 +51,7 @@ class Service extends React.Component {
               </div>
             </div>
             <figure className="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
-              <img src="assets/macbook-pro.png" alt="" />
+              <img src="/assets/macbook-pro.png" alt="" />
             </figure>
 
           </div>

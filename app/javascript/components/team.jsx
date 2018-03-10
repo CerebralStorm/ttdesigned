@@ -15,7 +15,7 @@ class Team extends React.Component {
             <div className="team-leader-box">
               <div className="team-leader wow fadeInDown delay-03s">
                 <div className="team-leader-shadow"><a href="#"></a></div>
-                <img src="assets/team-leader-pic1.jpg" alt="" />
+                <img src="/assets/team-leader-pic1.jpg" alt="" />
                 <ul>
                   <li><a href="#" className="fa-twitter"></a></li>
                   <li><a href="#" className="fa-facebook"></a></li>
@@ -30,7 +30,7 @@ class Team extends React.Component {
             <div className="team-leader-box">
               <div className="team-leader  wow fadeInDown delay-06s">
                 <div className="team-leader-shadow"><a href="#"></a></div>
-                <img src="assets/team-leader-pic2.jpg" alt="" />
+                <img src="/assets/team-leader-pic2.jpg" alt="" />
                 <ul>
                   <li><a href="#" className="fa-twitter"></a></li>
                   <li><a href="#" className="fa-facebook"></a></li>
@@ -45,7 +45,7 @@ class Team extends React.Component {
             <div className="team-leader-box">
               <div className="team-leader wow fadeInDown delay-09s">
                 <div className="team-leader-shadow"><a href="#"></a></div>
-                <img src="assets/team-leader-pic3.jpg" alt="" />
+                <img src="/assets/team-leader-pic3.jpg" alt="" />
                 <ul>
                   <li><a href="#" className="fa-twitter"></a></li>
                   <li><a href="#" className="fa-facebook"></a></li>
